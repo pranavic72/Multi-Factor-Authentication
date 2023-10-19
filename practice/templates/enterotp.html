@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/static/form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    
+  	<div class="registration_form">
+        
+  		<div class="title">
+  			Login 
+  		</div>
+
+  		<form action = "http://127.0.0.1:5000/validateotp" method="post">
+			<div class="form_wrap">
+  				<div class="input_wrap">
+  					<label for="city">Enter otp</label>
+  					<input type="text" id="otp" name="otp">
+  				</div>
+                
+  				<div class="input_wrap">
+  					<input type="submit" value="Login" class="submit_btn">
+  				</div>
+				{{ msg }}
+
+  			</div>
+  		</form>
+  	</div>
+  </div>
+</body>
+</html>
